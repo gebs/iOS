@@ -63,20 +63,25 @@
                                     <action selector="StartSpinner:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HL6-AP-yDV"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="reE-Q9-kYB">
-                                <frame key="frameInset" minX="189" minY="418" width="37" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="reE-Q9-kYB">
                                 <color key="color" red="0.21250646819999999" green="0.33386027810000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cch-cx-hVS">
-                                <frame key="frameInset" minX="372" minY="28" width="22" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cch-cx-hVS">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="JQw-rB-9Kc"/>
+                                    <constraint firstAttribute="width" constant="22" id="VWS-xw-qdn"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="infoButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xve-6I-Gv3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="tWZ-CI-ts6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1ow-GQ-HTi"/>
+                            <constraint firstItem="Cch-cx-hVS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="3aH-fC-FJP"/>
                             <constraint firstItem="tWZ-CI-ts6" firstAttribute="top" secondItem="lxC-Oa-i7j" secondAttribute="bottom" constant="97" id="8uC-Yy-pWQ"/>
+                            <constraint firstItem="reE-Q9-kYB" firstAttribute="top" secondItem="nk1-VE-vHn" secondAttribute="bottom" constant="35" id="9d8-LW-9Rx"/>
                             <constraint firstItem="4PS-xk-F16" firstAttribute="top" secondItem="cIh-4D-tNg" secondAttribute="bottom" constant="8" id="A71-md-jGS"/>
                             <constraint firstItem="nk1-VE-vHn" firstAttribute="top" secondItem="tWZ-CI-ts6" secondAttribute="bottom" constant="38" id="Jd0-88-c04"/>
                             <constraint firstItem="cIh-4D-tNg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LeA-dv-Yld"/>
@@ -84,8 +89,10 @@
                             <constraint firstItem="cIh-4D-tNg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="T8Y-Mb-dKE"/>
                             <constraint firstItem="3nk-bZ-fYt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VNQ-mP-vAl"/>
                             <constraint firstItem="nk1-VE-vHn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bN2-N7-vkg"/>
+                            <constraint firstItem="reE-Q9-kYB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eah-Ie-AKX"/>
                             <constraint firstItem="cIh-4D-tNg" firstAttribute="top" secondItem="3nk-bZ-fYt" secondAttribute="bottom" constant="55" id="pEQ-Lh-HvX"/>
                             <constraint firstItem="3nk-bZ-fYt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="pcM-qN-UL6"/>
+                            <constraint firstItem="Cch-cx-hVS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="pl8-ew-M0G"/>
                             <constraint firstItem="lxC-Oa-i7j" firstAttribute="top" secondItem="cIh-4D-tNg" secondAttribute="bottom" constant="8" id="tIc-t0-fV3"/>
                             <constraint firstItem="lxC-Oa-i7j" firstAttribute="leading" secondItem="4PS-xk-F16" secondAttribute="trailing" constant="4" id="vmK-KG-aAE"/>
                             <constraint firstItem="cIh-4D-tNg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="x6i-sk-2XE"/>
@@ -94,6 +101,7 @@
                     <navigationItem key="navigationItem" id="ueh-3g-NKN"/>
                     <connections>
                         <outlet property="myLabel" destination="3nk-bZ-fYt" id="0cu-TW-eou"/>
+                        <outlet property="mySlider" destination="cIh-4D-tNg" id="sbC-tN-Fn9"/>
                         <outlet property="mySpinner" destination="reE-Q9-kYB" id="el8-Qi-ld0"/>
                         <outlet property="sliderlabel" destination="lxC-Oa-i7j" id="Vgi-mm-FaY"/>
                     </connections>
