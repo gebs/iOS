@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         }
         else if sender.value <= 90
         {
-        self.isShown = false
+            self.isShown = false
         }
         
     }
