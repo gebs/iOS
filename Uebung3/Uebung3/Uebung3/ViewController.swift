@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         appearanceCounter = appearanceCounter + 1
         self.lblApperanceCounter.text = String(appearanceCounter) + ". Apperance"
     }

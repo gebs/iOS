@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var mySpinner: UIActivityIndicatorView!
     @IBOutlet weak var mySlider: UISlider!
     
+    var isShown: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -29,7 +31,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    var isShown: Bool = false
+    
     
     @IBAction func SilderValueChanged(_ sender: UISlider) {
         
