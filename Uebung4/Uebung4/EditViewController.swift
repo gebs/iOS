@@ -62,7 +62,12 @@ class EditViewController: UIViewController,UITextFieldDelegate {
     @IBAction func saveAndCloseClicked(_ sender: UIButton) {
         self.editItem?.firstName = txtFirstname.text!
         self.editItem?.lastName = txtLastname.text!
-        self.editItem?.plz = Int(txtPostalCode.text!)!
+        if let plz = Int(txtPostalCode.text ?? "0") {
+            self.editItem?.plz = plz
+        }
+        if (tmp != nil){
+            
+        }
         
         self.dismiss(animated: true, completion: nil)
 
