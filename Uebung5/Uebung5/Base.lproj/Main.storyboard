@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fruits of the world" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKV-iV-7Rf">
@@ -33,7 +33,7 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9dY-4t-5xG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="citron" translatesAutoresizingMaskIntoConstraints="NO" id="9dY-4t-5xG">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="186" id="EPC-ab-8ik"/>
                                     <constraint firstAttribute="height" constant="200" id="FAz-fG-CnR"/>
@@ -58,7 +58,7 @@
                                         <include reference="VbB-8I-yVg"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
+                                <variation key="heightClass=regular-widthClass=compact" image="cherries">
                                     <mask key="constraints">
                                         <include reference="FAz-fG-CnR"/>
                                         <include reference="mZY-V2-ZsY"/>
@@ -79,7 +79,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BbT-Ja-2S8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cherries" translatesAutoresizingMaskIntoConstraints="NO" id="BbT-Ja-2S8">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="186" id="9LA-ZC-K7t"/>
                                     <constraint firstAttribute="width" constant="240" id="LtW-Yy-4KO"/>
@@ -97,13 +97,13 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="USU-gF-ieh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="USU-gF-ieh">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="B58-pV-jwb"/>
                                     <constraint firstAttribute="height" constant="186" id="kY9-0p-7RC"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Jd-f0-j4w">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watermelon" translatesAutoresizingMaskIntoConstraints="NO" id="5Jd-f0-j4w">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="Ft6-Vv-70M"/>
                                     <constraint firstAttribute="height" constant="188" id="lhu-57-Qmj"/>
@@ -219,4 +219,10 @@
             <point key="canvasLocation" x="32.03125" y="67.96875"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="apple" width="250" height="250"/>
+        <image name="cherries" width="250" height="250"/>
+        <image name="citron" width="250" height="250"/>
+        <image name="watermelon" width="250" height="250"/>
+    </resources>
 </document>

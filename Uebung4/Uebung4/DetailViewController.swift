@@ -54,11 +54,12 @@ class DetailViewController: UIViewController {
     }
 
     @IBAction func editClicked(_ sender: UIButton) {
-        let view = self.storyboard?.instantiateViewController(withIdentifier: "EditView") as? EditViewController
-        if view != nil{
-            view!.editItem = detailItem
-            self.navigationController?.present(view!, animated: true, completion: nil)
+        guard let view = self.storyboard?.instantiateViewController(withIdentifier: "EditView") as? EditViewController else {
+            return
         }
+        
+        view.editItem = detailItem
+        self.navigationController?.present(view, animated: true, completion: nil)
     }
 
 }
